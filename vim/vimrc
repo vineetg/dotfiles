@@ -1,0 +1,47 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set shell=/bin/bash
+syntax enable
+set guifont=Source\ Code\ Pro:h15
+
+if has('gui_running')
+        colorscheme solarized
+        set background=dark
+else
+        " Leave default
+endif
+
+" ================ Search Settings  =================
+
+set incsearch       " Find the next match as we type the search
+set ignorecase      " Ignore case when searching...
+set smartcase       " ...unless we type a capital
+
+" ================ Indent Settings  =================
+
+set autoindent
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smarttab
+
+" ================ Change leader key ================
+let mapleader=","
+let mapleader="\<Space>" " http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
+
+" =============== Keyboard Shortcuts ================
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>
+map <C-L> :tabn<CR>
+map <C-H> :tabp<CR>
+
+" Use jk as escape character
+inoremap jk <esc>l
+" Unmap esc to no operation to unlearn it
+inoremap <esc> <nop>
+
+" ============== Change tab and spaces ================
+set list listchars=tab:>-,trail:.,extends:>
+highlight SpecialKey ctermfg=red guifg=red
+
