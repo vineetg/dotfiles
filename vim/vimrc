@@ -28,7 +28,7 @@ set smarttab
 
 " ================ Change leader key ================
 let mapleader=","
-let mapleader="\<Space>" " http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
+"let mapleader="\<Space>" " http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
 
 " =============== Keyboard Shortcuts ================
 map <C-J> :bnext<CR>
